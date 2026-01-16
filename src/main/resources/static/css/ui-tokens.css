@@ -1,0 +1,62 @@
+/* ========== LIGHT MODE ========== */
+:root {
+  /* Overlay */
+  --modal-overlay-bg: rgba(0, 0, 0, 0.7);
+
+  /* Modal surface */
+  --modal-bg: #ffffff;
+
+  /* Text */
+  --modal-title-color: #000000;
+  --modal-text-color: #333333;
+
+  /* Buttons */
+
+  /* Primary action button (e.g., Confirm, Submit, Approve) */
+  --btn-primary-bg: #fee2e2;
+  --btn-primary-text: #991b1b;
+  --btn-primary-border: #f87171;
+  --btn-primary-hover-bg: #fecaca;
+  --btn-primary-hover-text: #b91c1c;
+  --btn-primary-hover-border: #ef4444;
+
+  /* Secondary action button (e.g., Cancel, Close, Dismiss) */
+  --btn-secondary-bg: #f5f5f5;
+  --btn-secondary-text: #000000;
+  --btn-secondary-border: #aaaaaa;
+  --btn-secondary-hover-bg: #aaaaaa;
+  --btn-secondary-hover-text: #000000;
+  --btn-secondary-hover-border: #aaaaaa;
+
+  /* Shape & spacing */
+  --modal-radius: 0.75rem;
+  --modal-padding: 1.5rem;
+  --modal-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+  /* General spacing */
+  --gap-md: 0.75rem;
+}
+
+/* ========== DARK MODE ========== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --modal-overlay-bg: rgba(0, 0, 0, 0.85);
+    --modal-bg: #0f172a;
+    --modal-title-color: #f9fafb;
+    --modal-text-color: #cbd5f5;
+
+    --btn-primary-bg: #7f1d1d;
+    --btn-primary-text: #fee2e2;
+    --btn-primary-border: #991b1b;
+    --btn-primary-hover-bg: #991b1b;
+    --btn-primary-hover-text: #ffffff;
+    --btn-primary-hover-border: #b91c1c;
+
+    --btn-secondary-bg: #1e293b;
+    --btn-secondary-text: #f9fafb;
+    --btn-secondary-border: #334155;
+    --btn-secondary-hover-bg: #334155;
+    --btn-secondary-hover-text: #f9fafb;
+    --btn-secondary-hover-border: #334155;
+  }
+}
