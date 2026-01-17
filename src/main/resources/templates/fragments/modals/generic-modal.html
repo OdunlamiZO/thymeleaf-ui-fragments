@@ -1,0 +1,12 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="modal">
+  <div id="modal" class="modal hidden">
+    <div class="modal__dialog">
+      <button class="modal__close" onclick="closeModal()" aria-label="Close">✕</button>
+
+      <div class="modal__slot" th:insert="~{::slot}"></div>
+    </div>
+  </div>
+
+  <script th:src="@{/js/fragments/modals/modal.js}"></script>
+</html>

@@ -1,11 +1,7 @@
 <!doctype html>
 <html xmlns:th="http://www.thymeleaf.org" th:fragment="confirmModal">
-  <div id="confirm-modal" class="confirm-modal hidden">
-    <div class="confirm-modal__dialog">
-      <button class="confirm-modal__close" onclick="closeConfirmModal()" aria-label="Close">
-        ✕
-      </button>
-
+  <div th:replace="fragments/modals/generic-modal :: modal">
+    <div th:fragment="slot">
       <h1 id="confirm-title" class="confirm-modal__title">Confirm</h1>
       <p class="confirm-modal__message">
         <span id="confirm-message">
@@ -19,7 +15,7 @@
         <div class="confirm-modal__actions">
           <button
             type="button"
-            onclick="closeConfirmModal()"
+            onclick="closeModal()"
             class="confirm-modal__btn confirm-modal__btn--secondary"
           >
             Cancel
@@ -33,5 +29,5 @@
     </div>
   </div>
 
-  <script th:src="@{/js/fragments/confirm-modal.js}"></script>
+  <script th:src="@{/js/fragments/modals/confirm-modal.js}"></script>
 </html>
