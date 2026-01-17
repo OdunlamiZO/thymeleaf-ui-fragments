@@ -1,0 +1,36 @@
+.hidden {
+  display: none;
+}
+.flex {
+  display: flex;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: var(--modal-overlay-bg);
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.modal__dialog {
+  background-color: var(--modal-bg);
+  padding: var(--modal-padding);
+  border-radius: var(--modal-radius);
+  width: 100%;
+  max-width: 28rem;
+  position: relative;
+  box-shadow: var(--modal-shadow);
+}
+
+.modal__close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  color: var(--modal-text-color);
+  font-size: 1.25rem;
+  cursor: pointer;
+}
