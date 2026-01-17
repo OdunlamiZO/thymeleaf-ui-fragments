@@ -1,0 +1,24 @@
+{
+  "name": "thymeleaf-ui-fragments",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.{html,css,js}\"",
+    "check-format": "prettier --check \"src/**/*.{html,css,js}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OdunlamiZO/thymeleaf-ui-fragments.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OdunlamiZO/thymeleaf-ui-fragments/issues"
+  },
+  "homepage": "https://github.com/OdunlamiZO/thymeleaf-ui-fragments#readme",
+  "description": "",
+  "devDependencies": {
+    "prettier": "^3.8.0"
+  }
+}

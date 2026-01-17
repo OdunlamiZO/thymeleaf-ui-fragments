@@ -2,11 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org" th:fragment="confirmModal">
   <div id="confirm-modal" class="confirm-modal hidden">
     <div class="confirm-modal__dialog">
-      <button
-        class="confirm-modal__close"
-        onclick="closeConfirmModal()"
-        aria-label="Close"
-      >
+      <button class="confirm-modal__close" onclick="closeConfirmModal()" aria-label="Close">
         ✕
       </button>
 
@@ -18,11 +14,7 @@
       </p>
 
       <form id="confirm-form" method="post">
-        <input
-          type="hidden"
-          th:name="${_csrf.parameterName}"
-          th:value="${_csrf.token}"
-        />
+        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
 
         <div class="confirm-modal__actions">
           <button
@@ -33,10 +25,7 @@
             Cancel
           </button>
 
-          <button
-            type="submit"
-            class="confirm-modal__btn confirm-modal__btn--primary"
-          >
+          <button type="submit" class="confirm-modal__btn confirm-modal__btn--primary">
             Confirm
           </button>
         </div>

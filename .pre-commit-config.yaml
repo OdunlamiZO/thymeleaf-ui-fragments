@@ -1,0 +1,14 @@
+repos:
+  - repo: local
+    hooks:
+      - id: prettier
+        name: Prettier format check
+        entry: npm run check-format
+        language: system
+        pass_filenames: false
+
+      - id: maven-verify
+        name: Maven Verify
+        entry: mvn -B clean verify
+        language: system
+        pass_filenames: false

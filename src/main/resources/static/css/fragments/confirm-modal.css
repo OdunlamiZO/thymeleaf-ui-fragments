@@ -1,5 +1,9 @@
-.hidden { display: none; }
-.flex { display: flex; }
+.hidden {
+  display: none;
+}
+.flex {
+  display: flex;
+}
 
 .confirm-modal {
   position: fixed;
@@ -57,7 +61,10 @@
   font-weight: 500;
   cursor: pointer;
   border: 1px solid;
-  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+  transition:
+    background-color 0.2s,
+    color 0.2s,
+    border-color 0.2s;
 }
 
 .confirm-modal__btn--primary {

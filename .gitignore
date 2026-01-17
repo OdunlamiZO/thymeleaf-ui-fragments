@@ -36,3 +36,8 @@ out/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Node.js (if applicable)
+node*/
+npm-debug.log
+yarn-error.log
