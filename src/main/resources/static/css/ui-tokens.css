@@ -1,62 +1,152 @@
 /* ========== LIGHT MODE ========== */
 :root {
-  /* Overlay */
+  /*** Color Palette ***/
+  --color-primary: #000000;
+  --color-secondary: #333333;
+  --color-tertiary: #f5f5f5;
+
+  /* Green */
+  --color-green-bg: #d1fae5;
+  --color-green-text: #065f46;
+  --color-green-border: #34d399;
+  --color-green-bg-hover: #bbf7d0;
+  --color-green-text-hover: #047857;
+  --color-green-border-hover: #059669;
+
+  /* Blue */
+  --color-blue-bg: #dbeafe;
+  --color-blue-text: #1e40af;
+  --color-blue-border: #3b82f6;
+  --color-blue-bg-hover: #bfdbfe;
+  --color-blue-text-hover: #2563eb;
+  --color-blue-border-hover: #2563eb;
+
+  /* Yellow */
+  --color-yellow-bg: #fef3c7;
+  --color-yellow-text: #78350f;
+  --color-yellow-border: #fbbf24;
+  --color-yellow-bg-hover: #fde68a;
+  --color-yellow-text-hover: #b45309;
+  --color-yellow-border-hover: #d97706;
+
+  /* Red */
+  --color-red-bg: #fee2e2;
+  --color-red-text: #991b1b;
+  --color-red-border: #f87171;
+  --color-red-bg-hover: #fecaca;
+  --color-red-text-hover: #b91c1c;
+  --color-red-border-hover: #ef4444;
+
+  /* Purple */
+  --color-purple-bg: #ede9fe;
+  --color-purple-text: #6d28d9;
+  --color-purple-border: #a78bfa;
+  --color-purple-bg-hover: #ddd6fe;
+  --color-purple-text-hover: #7c3aed;
+  --color-purple-border-hover: #8b5cf6;
+
+  /*** Spacing ***/
+  --gap-md: 0.75rem;
+
+  /*** Modals ***/
   --modal-overlay-bg: rgba(0, 0, 0, 0.7);
+  --modal-bg: var(--color-tertiary);
+  --modal-title-color: var(--color-primary);
+  --modal-text-color: var(--color-secondary);
 
-  /* Modal surface */
-  --modal-bg: #ffffff;
+  /* Primary action button (Confirm, Submit, Approve) */
+  --modal-btn-primary-bg: var(--color-red-bg);
+  --modal-btn-primary-text: var(--color-red-text);
+  --modal-btn-primary-border: var(--color-red-border);
+  --modal-btn-primary-hover-bg: var(--color-red-bg-hover);
+  --modal-btn-primary-hover-text: var(--color-red-text-hover);
+  --modal-btn-primary-hover-border: var(--color-red-border-hover);
 
-  /* Text */
-  --modal-title-color: #000000;
-  --modal-text-color: #333333;
-
-  /* Buttons */
-
-  /* Primary action button (e.g., Confirm, Submit, Approve) */
-  --btn-primary-bg: #fee2e2;
-  --btn-primary-text: #991b1b;
-  --btn-primary-border: #f87171;
-  --btn-primary-hover-bg: #fecaca;
-  --btn-primary-hover-text: #b91c1c;
-  --btn-primary-hover-border: #ef4444;
-
-  /* Secondary action button (e.g., Cancel, Close, Dismiss) */
-  --btn-secondary-bg: #f5f5f5;
-  --btn-secondary-text: #000000;
-  --btn-secondary-border: #aaaaaa;
-  --btn-secondary-hover-bg: #aaaaaa;
-  --btn-secondary-hover-text: #000000;
-  --btn-secondary-hover-border: #aaaaaa;
+  /* Secondary action button (Cancel, Close, Dismiss) */
+  --modal-btn-secondary-bg: var(--color-tertiary);
+  --modal-btn-secondary-text: var(--color-primary);
+  --modal-btn-secondary-border: var(--color-secondary);
+  --modal-btn-secondary-hover-bg: var(--color-secondary);
+  --modal-btn-secondary-hover-text: var(--color-primary);
+  --modal-btn-secondary-hover-border: var(--color-secondary);
 
   /* Shape & spacing */
   --modal-radius: 0.75rem;
   --modal-padding: 1.5rem;
   --modal-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-
-  /* General spacing */
-  --gap-md: 0.75rem;
 }
 
 /* ========== DARK MODE ========== */
 @media (prefers-color-scheme: dark) {
   :root {
+    /*** Color Palette ***/
+    --color-primary: #f9fafb;
+    --color-secondary: #cbd5f5;
+    --color-tertiary: #1e293b;
+
+    /* Green */
+    --color-green-bg: #064e3b;
+    --color-green-text: #d1fae5;
+    --color-green-border: #10b981;
+    --color-green-bg-hover: #065f46;
+    --color-green-text-hover: #d1fae5;
+    --color-green-border-hover: #34d399;
+
+    /* Blue */
+    --color-blue-bg: #1e3a8a;
+    --color-blue-text: #dbeafe;
+    --color-blue-border: #3b82f6;
+    --color-blue-bg-hover: #2563eb;
+    --color-blue-text-hover: #dbeafe;
+    --color-blue-border-hover: #3b82f6;
+
+    /* Yellow */
+    --color-yellow-bg: #78350f;
+    --color-yellow-text: #fef3c7;
+    --color-yellow-border: #f59e0b;
+    --color-yellow-bg-hover: #b45309;
+    --color-yellow-text-hover: #fef3c7;
+    --color-yellow-border-hover: #d97706;
+
+    /* Red */
+    --color-red-bg: #7f1d1d;
+    --color-red-text: #fee2e2;
+    --color-red-border: #ef4444;
+    --color-red-bg-hover: #991b1b;
+    --color-red-text-hover: #fee2e2;
+    --color-red-border-hover: #b91c1c;
+
+    /* Purple */
+    --color-purple-bg: #5b21b6;
+    --color-purple-text: #ede9fe;
+    --color-purple-border: #8b5cf6;
+    --color-purple-bg-hover: #7c3aed;
+    --color-purple-text-hover: #ede9fe;
+    --color-purple-border-hover: #a78bfa;
+
+    /*** Modals ***/
     --modal-overlay-bg: rgba(0, 0, 0, 0.85);
-    --modal-bg: #0f172a;
-    --modal-title-color: #f9fafb;
-    --modal-text-color: #cbd5f5;
+    --modal-bg: var(--color-tertiary);
+    --modal-title-color: var(--color-primary);
+    --modal-text-color: var(--color-secondary);
 
-    --btn-primary-bg: #7f1d1d;
-    --btn-primary-text: #fee2e2;
-    --btn-primary-border: #991b1b;
-    --btn-primary-hover-bg: #991b1b;
-    --btn-primary-hover-text: #ffffff;
-    --btn-primary-hover-border: #b91c1c;
+    /* Primary action button (Confirm, Submit, Approve) */
+    --modal-btn-primary-bg: var(--color-red-bg);
+    --modal-btn-primary-text: var(--color-red-text);
+    --modal-btn-primary-border: var(--color-red-border);
+    --modal-btn-primary-hover-bg: var(--color-red-bg-hover);
+    --modal-btn-primary-hover-text: var(--color-red-text-hover);
+    --modal-btn-primary-hover-border: var(--color-red-border-hover);
 
-    --btn-secondary-bg: #1e293b;
-    --btn-secondary-text: #f9fafb;
-    --btn-secondary-border: #334155;
-    --btn-secondary-hover-bg: #334155;
-    --btn-secondary-hover-text: #f9fafb;
-    --btn-secondary-hover-border: #334155;
+    /* Secondary action button (Cancel, Close, Dismiss) */
+    --modal-btn-secondary-bg: var(--color-tertiary);
+    --modal-btn-secondary-text: var(--color-primary);
+    --modal-btn-secondary-border: var(--color-secondary);
+    --modal-btn-secondary-hover-bg: var(--color-secondary);
+    --modal-btn-secondary-hover-text: var(--color-primary);
+    --modal-btn-secondary-hover-border: var(--color-secondary);
+
+    /* Shape & spacing */
+    --modal-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
   }
 }

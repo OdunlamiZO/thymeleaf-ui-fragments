@@ -31,25 +31,25 @@
 }
 
 .confirm-modal__btn--primary {
-  background-color: var(--btn-primary-bg);
-  color: var(--btn-primary-text);
-  border-color: var(--btn-primary-border);
+  background-color: var(--modal-btn-primary-bg);
+  color: var(--modal-btn-primary-text);
+  border-color: var(--modal-btn-primary-border);
 }
 
 .confirm-modal__btn--primary:hover {
-  background-color: var(--btn-primary-hover-bg);
-  color: var(--btn-primary-hover-text);
-  border-color: var(--btn-primary-hover-border);
+  background-color: var(--modal-btn-primary-hover-bg);
+  color: var(--modal-btn-primary-hover-text);
+  border-color: var(--modal-btn-primary-hover-border);
 }
 
 .confirm-modal__btn--secondary {
-  background-color: var(--btn-secondary-bg);
-  color: var(--btn-secondary-text);
-  border-color: var(--btn-secondary-border);
+  background-color: var(--modal-btn-secondary-bg);
+  color: var(--modal-btn-secondary-text);
+  border-color: var(--modal-btn-secondary-border);
 }
 
 .confirm-modal__btn--secondary:hover {
-  background-color: var(--btn-secondary-hover-bg);
-  color: var(--btn-secondary-hover-text);
-  border-color: var(--btn-secondary-hover-border);
+  background-color: var(--modal-btn-secondary-hover-bg);
+  color: var(--modal-btn-secondary-hover-text);
+  border-color: var(--modal-btn-secondary-hover-border);
 }
