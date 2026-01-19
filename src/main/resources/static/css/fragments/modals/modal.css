@@ -1,6 +1,7 @@
 .hidden {
   display: none;
 }
+
 .flex {
   display: flex;
 }
@@ -19,7 +20,7 @@
   padding: var(--modal-padding);
   border-radius: var(--modal-radius);
   width: 100%;
-  max-width: 28rem;
+  max-width: var(--modal-width);
   position: relative;
   box-shadow: var(--modal-shadow);
 }

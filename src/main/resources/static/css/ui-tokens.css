@@ -48,7 +48,7 @@
   /*** Spacing ***/
   --gap-md: 0.75rem;
 
-  /*** Modals ***/
+  /*** Modal ***/
   --modal-overlay-bg: rgba(0, 0, 0, 0.7);
   --modal-bg: var(--color-tertiary);
   --modal-title-color: var(--color-primary);
@@ -73,6 +73,7 @@
   /* Shape & spacing */
   --modal-radius: 0.75rem;
   --modal-padding: 1.5rem;
+  --modal-width: 28rem;
   --modal-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
@@ -124,7 +125,7 @@
     --color-purple-text-hover: #ede9fe;
     --color-purple-border-hover: #a78bfa;
 
-    /*** Modals ***/
+    /*** Modal ***/
     --modal-overlay-bg: rgba(0, 0, 0, 0.85);
     --modal-bg: var(--color-tertiary);
     --modal-title-color: var(--color-primary);
